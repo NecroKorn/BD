@@ -1,0 +1,1 @@
+json.array! @calificacion_peliculas, partial: 'calificacion_peliculas/calificacion_pelicula', as: :calificacion_pelicula

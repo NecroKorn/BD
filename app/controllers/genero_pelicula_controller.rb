@@ -1,0 +1,2 @@
+class GeneroPeliculaController < ApplicationController
+end

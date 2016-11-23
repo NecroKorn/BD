@@ -1,0 +1,2 @@
+class GeneroPelicula < ApplicationRecord
+end

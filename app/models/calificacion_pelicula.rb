@@ -1,0 +1,2 @@
+class CalificacionPelicula < ApplicationRecord
+end

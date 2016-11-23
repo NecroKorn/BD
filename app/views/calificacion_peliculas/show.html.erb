@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id calificacion pelicula:</strong>
+  <%= @calificacion_pelicula.id_calificacion_pelicula %>
+</p>
+
+<p>
+  <strong>Nombre calificacion pelicula:</strong>
+  <%= @calificacion_pelicula.nombre_calificacion_pelicula %>
+</p>
+
+<%= link_to 'Edit', edit_calificacion_pelicula_path(@calificacion_pelicula) %> |
+<%= link_to 'Back', calificacion_peliculas_path %>

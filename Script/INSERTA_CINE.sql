@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.inserta_cine
+CREATE OR REPLACE FUNCTION public.inserta_cine
 (
 	_direccion character varying(100), 
 	_nombre_cine character varying(100)
@@ -22,5 +22,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.inserta_cine(character varying, character varying)
-  OWNER TO sa;

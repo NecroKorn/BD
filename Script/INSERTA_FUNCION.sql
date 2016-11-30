@@ -25,6 +25,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.INSERTA_FUNCION(integer, integer, date)
-  OWNER TO sa;

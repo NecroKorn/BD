@@ -208,6 +208,9 @@ create table GENERO_PELICULA (
 
 alter table GENERO_PELICULA
    add constraint PK_GENERO_PELICULA primary key (ID_GENERO_PELICULA);
+   
+ALTER TABLE GENERO_PELICULA
+  ADD CONSTRAINT genero_uniq UNIQUE(nombre_genero);
 
 /*==============================================================*/
 /* Index: GENERO_PELICULA_PK                                    */

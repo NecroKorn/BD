@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.inserta_persona
+CREATE OR REPLACE FUNCTION public.inserta_persona
 (
 	_nombre_persona character varying(100),
 	_apellido_paterno character varying(100),
@@ -25,6 +25,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.inserta_persona(integer, character varying(100), character varying(100), character varying(100))
-  OWNER TO sa;

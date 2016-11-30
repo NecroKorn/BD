@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.INSERTA_RESERVA
+CREATE OR REPLACE FUNCTION public.INSERTA_RESERVA
 (
 	_id_funcion integer,
 	_fecha_reserva date,
@@ -28,5 +28,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.inserta_reserva(integer, date, boolean, date)
-  OWNER TO sa;

@@ -376,6 +376,8 @@ create table ROL_REPARTO (
 
 alter table ROL_REPARTO
    add constraint PK_ROL_REPARTO primary key (ID_ROL_REPARTO);
+   
+ALTER TABLE ROL_REPARTO ADD UNIQUE (nombre_rol);
 
 /*==============================================================*/
 /* Index: ROL_REPARTO_PK                                        */

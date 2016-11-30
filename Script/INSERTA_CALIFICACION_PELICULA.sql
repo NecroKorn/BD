@@ -18,5 +18,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.inserta_calificacion_pelicula(integer, character varying)
-  OWNER TO sa;

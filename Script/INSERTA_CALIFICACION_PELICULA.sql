@@ -1,19 +1,18 @@
 ﻿CREATE OR REPLACE FUNCTION public.inserta_calificacion_pelicula(
-    id_calificacion_pelicula integer,
-    nombre_calificacion_pelicula character varying)
+    _nombre_calificacion_pelicula character varying)
   RETURNS void AS
 $BODY$
 BEGIN
     INSERT INTO 
-	public.calificacion_pelicula
+	public."calificacion_pelicula"
 	(
 		id_calificacion_pelicula, 
 		nombre_calificacion_pelicula
 	)
     VALUES 
 	(
-		id_calificacion_pelicula,
-		nombre_calificacion_pelicula
+		nextval('id_calificacion_pelicula_seq'),
+		_nombre_calificacion_pelicula
 	);
 END;
 $BODY$

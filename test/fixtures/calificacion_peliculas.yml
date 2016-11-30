@@ -2,8 +2,8 @@
 
 one:
   id_calificacion_pelicula: 1
-  nombre_calificacion_pelicula: MyString
+  nombre_calificacion_pelicula: MyText
 
 two:
   id_calificacion_pelicula: 1
-  nombre_calificacion_pelicula: MyString
+  nombre_calificacion_pelicula: MyText

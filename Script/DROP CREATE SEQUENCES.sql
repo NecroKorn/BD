@@ -1,0 +1,120 @@
+﻿DROP SEQUENCE IF EXISTS id_calificacion_pelicula_seq;
+
+CREATE SEQUENCE public.id_calificacion_pelicula_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_calificacion_pelicula_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_cine_seq;
+
+CREATE SEQUENCE public.id_cine_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_cine_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_butaca_seq;
+
+CREATE SEQUENCE public.id_butaca_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_butaca_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_reserva_seq;
+
+CREATE SEQUENCE public.id_reserva_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_reserva_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_pelicula_seq;
+
+CREATE SEQUENCE public.id_pelicula_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_pelicula_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_genero_pelicula_seq;
+
+CREATE SEQUENCE public.id_genero_pelicula_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_genero_pelicula_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_reparto_seq;
+
+CREATE SEQUENCE public.id_reparto_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_reparto_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_persona_seq;
+
+CREATE SEQUENCE public.id_persona_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_persona_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_rol_reparto_seq;
+
+CREATE SEQUENCE public.id_rol_reparto_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_rol_reparto_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_sala_seq;
+
+CREATE SEQUENCE public.id_sala_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_sala_seq
+  OWNER TO sa;
+
+DROP SEQUENCE IF EXISTS id_funcion_seq;
+
+CREATE SEQUENCE public.id_funcion_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE public.id_funcion_seq
+  OWNER TO sa;

@@ -26,5 +26,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.Inserta_Historia_Reserva(char(1), date, integer)
-  OWNER TO sa;

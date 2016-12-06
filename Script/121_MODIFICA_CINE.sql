@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.modifica_cine
+CREATE OR REPLACE FUNCTION public.modifica_cine
 (
 	_id_cine integer, 
 	_direccion character varying(100), 
@@ -25,6 +25,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.modifica_cine(integer, character varying, character varying)
-  OWNER TO sa;

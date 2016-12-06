@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.MODIFICA_REPARTO
+CREATE OR REPLACE FUNCTION public.MODIFICA_REPARTO
 (
 	_id_reparto integer,
 	_id_persona integer,
@@ -28,6 +28,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.MODIFICA_REPARTO(integer, integer, integer, character varying)
-  OWNER TO sa;

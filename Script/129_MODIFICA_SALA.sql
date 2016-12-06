@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.MODIFICA_SALA
+CREATE OR REPLACE FUNCTION public.MODIFICA_SALA
 (
 	_id_sala integer,
 	_id_cine integer,
@@ -27,6 +27,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.MODIFICA_SALA(integer, integer, integer, integer)
-  OWNER TO sa;

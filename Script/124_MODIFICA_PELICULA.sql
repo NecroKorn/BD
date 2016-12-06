@@ -43,6 +43,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.modifica_pelicula(integer, integer, integer, integer, character varying(100), character varying(100), character varying(100),boolean,numeric,integer,date,character varying(500))
-  OWNER TO sa;

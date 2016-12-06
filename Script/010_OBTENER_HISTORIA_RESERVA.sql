@@ -1,0 +1,13 @@
+﻿DROP FUNCTION IF EXISTS OBTENER_HISTORIA_RESERVA();
+
+CREATE FUNCTION OBTENER_HISTORIA_RESERVA()
+RETURNS SETOF public.HISTORIA_RESERVA AS
+$BODY$
+	SELECT 
+		id_historia,
+		operacion,
+		fecha_proceso,
+		id_reserva
+	FROM public.historia_reserva;
+$BODY$
+LANGUAGE 'sql'

@@ -1,0 +1,8 @@
+﻿DROP FUNCTION IF EXISTS OBTENER_CINE();
+
+CREATE FUNCTION OBTENER_CINE()
+RETURNS SETOF public.CINE AS
+$BODY$
+	SELECT id_cine, direccion, nombre_cine FROM public.cine;
+$BODY$
+LANGUAGE 'sql';

@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.modifica_genero_pelicula
+CREATE OR REPLACE FUNCTION public.modifica_genero_pelicula
 (
 	integer, 
 	character varying
@@ -23,6 +23,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.modifica_genero_pelicula(integer, character varying)
-  OWNER TO sa;

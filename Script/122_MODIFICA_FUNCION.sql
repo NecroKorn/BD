@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.modifica_funcion
+CREATE OR REPLACE FUNCTION public.modifica_funcion
 (
 	integer, 
 	integer, 
@@ -27,6 +27,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.modifica_funcion(integer, integer, integer, date)
-  OWNER TO sa;

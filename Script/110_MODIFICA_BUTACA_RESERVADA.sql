@@ -25,6 +25,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.MODIFICA_BUTACA_RESERVADA(integer, integer, integer)
-  OWNER TO sa;

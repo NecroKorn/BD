@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.MODIFICA_RESERVA
+CREATE OR REPLACE FUNCTION public.MODIFICA_RESERVA
 (
 	_id_reserva integer,
 	_id_funcion integer,
@@ -29,6 +29,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-  
-ALTER FUNCTION public.MODIFICA_RESERVA(integer, integer, date, boolean, date)
-  OWNER TO sa;

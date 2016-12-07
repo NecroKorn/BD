@@ -1,8 +1,13 @@
-﻿DROP FUNCTION IF EXISTS OBTENER_CALIFICACION_PELICULA();
+DROP FUNCTION IF EXISTS OBTENER_SALA();
 
-CREATE FUNCTION OBTENER_CALIFICACION_PELICULA()
-RETURNS SETOF public.calificacion_pelicula AS
+CREATE FUNCTION OBTENER_SALA()
+RETURNS SETOF public.sala AS
 $BODY$
-	SELECT * FROM public.calificacion_pelicula;
+	SELECT 
+		id_sala,
+		id_cine,
+		numero_sala,
+		cantidad_butacas
+  FROM public.sala;
 $BODY$
-LANGUAGE 'sql'
+LANGUAGE 'sql';

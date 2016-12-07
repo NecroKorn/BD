@@ -1,8 +1,18 @@
-﻿DROP FUNCTION IF EXISTS OBTENER_CINE();
+CREATE OR REPLACE FUNCTION public.obtener_cine(integer DEFAULT NULL)
+  RETURNS SETOF cine AS $$
+DECLARE
 
-CREATE FUNCTION OBTENER_CINE()
-RETURNS SETOF public.CINE AS
-$BODY$
-	SELECT id_cine, direccion, nombre_cine FROM public.cine;
-$BODY$
-LANGUAGE 'sql';
+BEGIN
+      IF $1 IS NULL THEN
+         RETURN QUERY
+	 SELECT id_cine, direccion, nombre_cine FROM cine; 
+      ELSE
+         RETURN QUERY
+      	 SELECT id_cine, direccion, nombre_cine FROM cine  where id_cine = $1; 
+      END IF;	
+
+END
+$$
+  LANGUAGE 'plpgsql' VOLATILE
+  COST 100
+  ROWS 1000;

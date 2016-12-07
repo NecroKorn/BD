@@ -1,0 +1,16 @@
+﻿CREATE OR REPLACE FUNCTION ELIMINA_GENERO_PELICULA
+(
+	integer
+) RETURNS BOOL AS
+$BODY$
+DECLARE
+	codigo ALIAS FOR $1;
+BEGIN
+	DELETE FROM public.genero_pelicula WHERE id_genero_pelicula = codigo;
+	IF FOUND THEN
+		RETURN TRUE;
+	END IF;
+	RETURN FALSE;
+END;
+
+$BODY$  LANGUAGE 'plpgsql' VOLATILE;

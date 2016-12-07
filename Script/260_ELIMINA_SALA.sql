@@ -1,0 +1,16 @@
+﻿CREATE OR REPLACE FUNCTION ELIMINA_SALA
+(
+	_id_sala integer
+) RETURNS BOOL AS
+$BODY$
+DECLARE
+	codigo ALIAS FOR _id_sala;
+BEGIN
+	DELETE FROM public.sala WHERE id_sala = codigo;
+	IF FOUND THEN
+		RETURN TRUE;
+	END IF;
+	RETURN FALSE;
+END;
+
+$BODY$  LANGUAGE 'plpgsql' VOLATILE;

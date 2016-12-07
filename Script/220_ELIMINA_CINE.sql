@@ -1,0 +1,15 @@
+﻿CREATE OR REPLACE FUNCTION ELIMINA_CINE
+(
+	_id_cine integer
+) RETURNS BOOL AS
+$BODY$
+DECLARE
+	codigo ALIAS FOR _id_cine;
+BEGIN
+	DELETE FROM public.cine WHERE id_cine = codigo;
+	IF FOUND THEN
+		RETURN TRUE;
+	END IF;
+	RETURN FALSE;
+END;
+$BODY$  LANGUAGE 'plpgsql' VOLATILE;

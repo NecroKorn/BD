@@ -1,0 +1,15 @@
+﻿CREATE OR REPLACE FUNCTION ELIMINA_RESERVA
+(
+	_id_reserva integer
+) RETURNS BOOL AS
+$BODY$
+DECLARE
+	codigo ALIAS FOR _id_reserva;
+BEGIN
+	DELETE FROM public.reserva WHERE id_reserva = codigo;
+	IF FOUND THEN
+		RETURN TRUE;
+	END IF;
+	RETURN FALSE;
+END;
+$BODY$  LANGUAGE 'plpgsql' VOLATILE;

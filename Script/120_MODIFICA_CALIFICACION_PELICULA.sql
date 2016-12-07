@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE FUNCTION public.modifica_calificacion_pelicula(
+CREATE OR REPLACE FUNCTION public.modifica_calificacion_pelicula(
     integer,
     character varying)
   RETURNS boolean AS

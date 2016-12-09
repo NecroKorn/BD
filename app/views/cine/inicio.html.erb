@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	<title>Laboratorio 1 Base Datos - CINE </title>
+	
+	<!-- css -->
+<style>
+body   { padding: 0 0 0 0; border: none; margin: 0;}
+	
+	#cabecera {	
+			background-color:#fff;
+			background-image: url("../fc.jpg");	
+			width:100%;
+			min-height:60x;			
+			margin:auto;
+			position: fixed;
+			border: solid 4px #000;
+			z-index: 11;
+			}
+	#cabecera h1 {margin: 20px 0 5px 490px;font-size: 32px; color: #fff;}
+	#login	{ width: 300px;
+		min-height: 30px;
+		margin: 0 0 0 80%;
+		background-color: #000;
+		border: none;
+		padding: 5px;}
+	#marco 	{ padding:101px 0 0 0;
+			  width:100%; 
+			  background-color:#fff;
+			  min-height:500px;
+			  position:center;
+			  background-repeat:repeat;
+			  margin:auto; }
+	
+	#cartelera 	{ padding:20px; width:58%; min-height:100px; background-color:#f00; border: solid 4px #000;}
+	#cartelera ul li {margin:2px; border:solid 4px #fff; padding:0;}
+	#reserva 	{ width: 30%; min-height: 315px; background-color: #fff; border: solid 10px #000; padding:15px;}
+	ul 			{ list-style: none; width:100%; margin:0; padding:0;}
+	ul li 		{ float:left;}
+	
+	select		{color: #fff;
+font-weight: bold;
+border: none;
+font-size: 12px;
+background: #000;}
+</style>
+
+</head>
+<body>
+
+	<div id="cabecera"> 
+	<h1>Cine Arte Mondrian</h1>
+		<div id="login"> 
+			<select id="" name="seleccioncines">
+				<option value="1" selected="selected" > Selecciona un Cine </option>
+				<option value="2"> Cine Norte </option>
+				<option value="3"> Cine Centro </option>
+				<option value="4"> Cine Sur </option>
+			</select>
+			
+		</div>
+	
+	</div>
+	
+	<div id="marco">
+		<ul>
+			<li id="cartelera" class="">
+				<ul id="listaPeliculas">
+					<li><img width="200" height="300" name="pelicula1" src="../1.jpg"> </li>
+					<li><img width="200" height="300" name="pelicula2" src="../2.jpg"> </li>
+					<li><img width="200" height="300" name="pelicula3" src="../3.jpg"> </li>
+				</ul>
+			</li>
+			<li id="reserva" class="">
+			
+			<form action="" method="post">
+			<p>Selecciona la pelicula que deseas ver:</p>
+			<select id="" name="seleccionpelicula">
+				<option value="1p" selected="selected" > Selecciona Pelicula </option>
+				<option value="2p"> Pelicula 1</option>
+				<option value="3p"> Pelicula 2</option>
+				<option value="4p"> Pelicula 3</option>
+			</select>
+			<p>Selecciona la fecha en que deseas asistir:</p>
+			<select id="" name="seleccionfuncion">
+				<option value="1d" selected="selected" > Selecciona Fecha </option>
+				<option value="2d"> Lun  </option>
+				<option value="3d"> Mar  </option>
+				<option value="4d"> Mier </option>
+			</select>
+			<p>Selecciona la la funcion a la que deseas asistir:</p>
+			<select id="" name="seleccionfuncion">
+				<option value="1f" selected="selected" > Selecciona Funcion </option>
+				<option value="2f"> 3:00pm  </option>
+				<option value="3f"> 5:00pm  </option>
+				<option value="4f"> 8:00pm  </option>
+			</select>
+			
+ 			<input type="submit" value="Reservar" />
+			</form>
+		
+			</li>
+		</ul>
+	</div>
+</body>
